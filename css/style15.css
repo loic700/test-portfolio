@@ -302,18 +302,18 @@ footer {
 
 
 
-/* --- STYLES POUR LA MODALE (SUNSET) --- */
+/* --- MODALE SUNSET --- */
 .modal-overlay {
     display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(67, 20, 7, 0.4); backdrop-filter: blur(8px); z-index: 2000;
-    justify-content: center; align-items: center; padding: 2rem;
+    background: rgba(67, 20, 7, 0.4); backdrop-filter: blur(10px); z-index: 2000;
+    justify-content: center; align-items: center;
 }
 .modal-content {
     background: white; border-radius: var(--radius); padding: 2.5rem;
-    max-width: 800px; width: 100%; position: relative;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    max-width: 800px; width: 90%; color: var(--text-dark); position: relative;
 }
-.modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--primary); margin-bottom: 1.5rem; padding-bottom: 0.5rem; }
-.modal-close { font-size: 2rem; border: none; background: none; cursor: pointer; color: var(--secondary); }
-.modal-question { color: var(--secondary); font-weight: 800; margin: 1.5rem 0 0.5rem 0; text-transform: uppercase; }
-.btn-more { display: inline-block; margin-top: 1.5rem; color: var(--primary); font-weight: 700; cursor: pointer; }
+.modal-header { display: flex; justify-content: space-between; border-bottom: 2px solid var(--primary); margin-bottom: 1.5rem; }
+.close-btn { background: none; border: none; color: var(--secondary); font-size: 2rem; cursor: pointer; }
+.modal-body h4 { color: var(--secondary); margin-top: 1.5rem; font-weight: 700; }
+.btn-more { background: none; border: 1px solid var(--primary); color: var(--primary); padding: 0.5rem 1rem; border-radius: 50px; cursor: pointer; transition: 0.3s; }
+.btn-more:hover { background: var(--primary); color: white; }
